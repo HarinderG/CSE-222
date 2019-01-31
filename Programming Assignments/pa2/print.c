@@ -15,7 +15,7 @@ void print(node* list)
 	node *newList = list->next;
 
 	//Skip traverse if LL is empty
-	if (link->next == NULL)
+	if (list->next == NULL)
 		printf("Linked list is EMPTY.\n");
 	//Traverse LL and print each data value.
 	while(newList != NULL)
