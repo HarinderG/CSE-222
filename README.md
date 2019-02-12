@@ -1,4 +1,4 @@
-# CSE 222 Data Structures
+# CSE 222 Intro to Data Structures
 This repository is an archive of all the programming assignments for CSE 222 at Clark College taken winter quarter 2018-2019, taught by Nicholas J. Macias.
 
 ## Course Description
