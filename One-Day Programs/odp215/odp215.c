@@ -1,6 +1,6 @@
 /*
 	Harinder Gakhal
-	2/11/19
+	2/13/19
 	CSE 222
 
 	ODP215 - find the largest node in a tree's left sub-tree
@@ -29,11 +29,22 @@
 
 	  int largest(struct node *root);
 */
+#include <stdlib.h>
+
+struct node{
+  int data;
+  struct node *left;
+  struct node *right;
+};
 
 int largest(struct node *root)
 {	
-	if (root->left != NULL)
-		largest(root->left);
-	else
-		return root->data;
+	root = root->left;
+	while(root->right != NULL)
+	{
+		if(root->right == NULL)
+			return root->data;
+		root = root->right;
+	}
+	return root->data;
 }
