@@ -1,0 +1,2 @@
+pa4: main.c insert.c init.c search.c height.c printInorder.c printPostorder.c printPreorder.c delete.c balanced.c
+	clear; gcc -o pa4 -g main.c insert.c init.c search.c height.c printInorder.c printPostorder.c printPreorder.c delete.c balanced.c
